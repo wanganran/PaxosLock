@@ -1,0 +1,45 @@
+[0m[[0minfo[0m] [0mRunning Client 2[0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/Documents/cse550/PaxosLock/target/scala-2.11/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.11.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.4.11.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.11.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.11/jars/akka-protobuf_2.11-2.4.11.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/io.netty/netty/bundles/netty-3.10.6.Final.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/io.aeron/aeron-driver/jars/aeron-driver-1.0.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/io.aeron/aeron-client/jars/aeron-client-1.0.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/wanganran/.ivy2/cache/org.agrona/Agrona/jars/Agrona-0.5.4.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[31merror[0m] [0m(run-main-0) java.util.concurrent.TimeoutException: Futures timed out after [1 second][0m
+java.util.concurrent.TimeoutException: Futures timed out after [1 second]
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:219)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:223)
+	at scala.concurrent.Await$$anonfun$result$1.apply(package.scala:190)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:53)
+	at scala.concurrent.Await$.result(package.scala:190)
+	at Client$.main(Client.scala:47)
+	at Client.main(Client.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at sbt.Run.invokeMain(Run.scala:67)
+	at sbt.Run.run0(Run.scala:61)
+	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
+	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Logger$$anon$4.apply(Logger.scala:85)
+	at sbt.TrapExit$App.run(TrapExit.scala:248)
+	at java.lang.Thread.run(Thread.java:745)
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread Hashed wheel timer #1 to terminate.[0m
